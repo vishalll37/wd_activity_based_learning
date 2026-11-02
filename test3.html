@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Learning Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f5fa;
+        }
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        h2 {
+            color: navy;
+            text-align: center;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #ccc;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .card h3 {
+            color: #2563eb;
+        }
+        button {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        progress {
+            width: 100%;
+            height: 15px;
+        }
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+
+             nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn Online</h1>
+        <p>Learn New Skills Anytime, Anywhere</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Online Learning</h2>
+        <p style="text-align:center;">
+            Improve your knowledge with our online courses.
+        </p>
+    </section>
+    <section id="courses">
+        <h2>Course Categories</h2>
+        <div class="courses">
+            <div class="card">
+                <img src="https://placehold.co/300x150?text=HTML+and+CSS"
+                     alt="HTML and CSS Course">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS and website design.</p>
+                <p><b>Instructor:</b> Ravi Kumar</p>
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>Learn HTML basics</li>
+                    <li>Understand CSS styling</li>
+                    <li>Create websites</li>
+                </ul>
+                <p>Course Progress:</p>
+                <progress value="60" max="100"></progress>
+                <p>60% Completed</p>
+                <button>Enroll Now</button>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x150?text=Python"
+                     alt="Python Course">
+                <h3>Python Programming</h3>
+                <p>Learn Python programming from basics.</p>
+                <p><b>Instructor:</b> Priya Sharma</p>
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>Learn Python syntax</li>
+                    <li>Understand variables</li>
+                    <li>Write simple programs</li>
+                </ul>
+                <p>Course Progress:</p>
+                <progress value="40" max="100"></progress>
+                <p>40% Completed</p>
+                <button>Enroll Now</button>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x150?text=Java"
+                     alt="Java Course">
+                <h3>Java Programming</h3>
+                <p>Learn object-oriented programming.</p>
+                <p><b>Instructor:</b> Suresh Kumar</p>
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>Learn Java basics</li>
+                    <li>Understand classes</li>
+                    <li>Develop applications</li>
+                </ul>
+                <p>Course Progress:</p>
+                <progress value="75" max="100"></progress>
+                <p>75% Completed</p>
+                <button>Enroll Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="instructors">
+        <h2>Our Instructors</h2>
+        <p style="text-align:center;">
+            Experienced teachers help students learn new skills.
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p style="text-align:center;">
+            Email: learnonline@gmail.com
+        </p>
+    </section>
+    <footer>
+        <p>© 2026 Learn Online Platform</p>
+    </footer>
+</body>
+</html>
